@@ -5,7 +5,12 @@ import com.company.Arrays.Array;
 public class Main {
 
     public static void main(String[] args) {
-      System.out.println(new Array().createList());
-      new Array().print();
+      //new Array(3).createList();
+      Array array = new Array(2);
+      array.insert(10);
+      array.insert(20);
+      array.insert(30);
+      array.removeAt(1);
+      array.print();
     }
 }
