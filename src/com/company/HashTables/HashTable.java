@@ -1,4 +1,4 @@
 package com.company.HashTables;
 
-public class HashTables {
+public class HashTable {
 }
