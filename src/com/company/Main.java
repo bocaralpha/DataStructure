@@ -10,7 +10,8 @@ public class Main {
       array.insert(10);
       array.insert(20);
       array.insert(30);
-      array.removeAt(1);
+      //array.removeAt(1);
+      array.indexOf(10);
       array.print();
     }
 }
