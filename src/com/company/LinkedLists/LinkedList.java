@@ -7,12 +7,26 @@ public class LinkedList {
 
     public void addLast(int item) {
         Node node = new Node(item);
-        if (first == null) {
+        if (isEmpty()) {
             last = first = node;
         } else {
             last.next = node;
             last = node;
         }
+    }
+
+    public void addFirst(int item) {
+        Node node = new Node(item);
+        if (isEmpty()) {
+            last = first = node;
+        } else {
+            first.next = node;
+            first = node;
+        }
+    }
+
+    private boolean isEmpty() {
+        return (first == null) ? true: false;
     }
 
     private class Node {
