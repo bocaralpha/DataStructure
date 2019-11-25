@@ -8,5 +8,7 @@ public class Main {
         linkedList.addFirst(1);
         linkedList.addLast(2);
         linkedList.addLast(3);
+        linkedList.indexOf(3);
+        linkedList.contains(3);
     }
 }

@@ -25,6 +25,25 @@ public class LinkedList {
         }
     }
 
+    public int indexOf(int item) {
+        Node current = first;
+        int index = 0;
+        while(current.next != null) {
+            if (current.value == item) {
+                System.out.println(index);
+                return index;
+            }
+                current = current.next;
+                index++;
+            }
+        return -1;
+    }
+
+    public boolean contains(int value) {
+        return (indexOf(value) != -1)? true: false;
+    }
+
+
     private boolean isEmpty() {
         return (first == null) ? true: false;
     }
