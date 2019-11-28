@@ -11,5 +11,6 @@ public class Main {
         linkedList.indexOf(3);
         linkedList.contains(3);
         linkedList.removeFirst();
-    }
+        linkedList.removeLast();
+        }
 }

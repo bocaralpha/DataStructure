@@ -33,11 +33,37 @@ public class LinkedList {
         }
         if (first == last) {
             first = last = null;
+            return;
         }
         Node second = first.next;
         first.next = null;
         first = second;
     }
+
+    public void removeLast() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        if (first == last) {
+            first = last = null;
+            return;
+        }
+        Node previous = getPrevious(last);
+        last = previous;
+        last.next = null;
+
+    }
+
+   private Node getPrevious(Node last) {
+        Node current = first;
+        while (current.next != null ) {
+            if (current.next == last) {
+                return current;
+            }
+            current = current.next;
+        }
+        return null;
+   }
 
     public int indexOf(int item) {
         Node current = first;
