@@ -10,5 +10,6 @@ public class Main {
         linkedList.addLast(3);
         linkedList.indexOf(3);
         linkedList.contains(3);
+        linkedList.removeFirst();
     }
 }

@@ -1,5 +1,7 @@
 package com.company.LinkedLists;
 
+import java.util.NoSuchElementException;
+
 public class LinkedList {
 
     private Node first;
@@ -23,6 +25,18 @@ public class LinkedList {
             first.next = node;
             first = node;
         }
+    }
+
+    public void removeFirst() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        if (first == last) {
+            first = last = null;
+        }
+        Node second = first.next;
+        first.next = null;
+        first = second;
     }
 
     public int indexOf(int item) {
