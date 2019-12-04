@@ -12,5 +12,6 @@ public class Main {
         linkedList.contains(3);
         linkedList.removeFirst();
         linkedList.removeLast();
-        }
+        linkedList.size();
+    }
 }
