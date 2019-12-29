@@ -89,7 +89,23 @@ public class LinkedList {
     public int size() {
         return size;
     }
-
+    
+    public void reverse() {
+        if (isEmpty()) {
+            return;
+        }
+        var previous = first;
+             var current = first.next;
+             while (current != null) {
+                 var next = current.next; // recuperation du prochain noeud par rapport au courant
+                 previous = current;  
+                 current.next = previous;    // faire pointer le prochain noeud du courant au premier
+                 current = next;
+             }
+             last = first;
+             last.next = null;
+             first = previous;
+    }
 
     public boolean contains(int value) {
         return (indexOf(value) != -1)? true: false;
