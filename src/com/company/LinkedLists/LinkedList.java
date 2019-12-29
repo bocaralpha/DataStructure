@@ -97,14 +97,28 @@ public class LinkedList {
         var previous = first;
              var current = first.next;
              while (current != null) {
-                 var next = current.next; // recuperation du prochain noeud par rapport au courant
+                 var next = current.next;
                  previous = current;
-                 current.next = previous;    // faire pointer le prochain noeud du courant au premier
+                 current.next = previous;
                  current = next;
              }
              last = first;
              last.next = null;
              first = previous;
+    }
+
+
+    public int getKthNodeFromEnd(int k) {
+        var a = first;
+        var b = first;
+        for (int i = 1; i < k -1; i++) {
+            b = b.next;
+        }
+        while (b != last) {
+            a = a.next;
+            b = b.next;
+        }
+        return a.value;
     }
 
     public boolean contains(int value) {
