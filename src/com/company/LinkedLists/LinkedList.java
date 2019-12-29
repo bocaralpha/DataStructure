@@ -98,7 +98,7 @@ public class LinkedList {
              var current = first.next;
              while (current != null) {
                  var next = current.next; // recuperation du prochain noeud par rapport au courant
-                 previous = current;  
+                 previous = current;
                  current.next = previous;    // faire pointer le prochain noeud du courant au premier
                  current = next;
              }
