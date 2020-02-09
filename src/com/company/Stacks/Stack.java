@@ -3,6 +3,7 @@ package com.company.Stacks;
 import com.company.Arrays.Array;
 
 import java.util.Arrays;
+import java.util.EmptyStackException;
 
 public class Stack {
 
@@ -30,8 +31,16 @@ public class Stack {
         items[count] = item;
         count ++;
     }
+
     public int pop() {
+        if (count == 0) {
+            throw new EmptyStackException();
+        }
         return  items[count --];
+    }
+
+    public boolean isEmpty() {
+        return count == 0 ? true: false;
     }
 
     public String toString() {
