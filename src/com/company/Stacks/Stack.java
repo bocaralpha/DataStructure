@@ -32,7 +32,7 @@ public class Stack {
         count ++;
     }
 
-    public int pop() {
+    public int pop() {  
         if (count == 0) {
             throw new EmptyStackException();
         }
