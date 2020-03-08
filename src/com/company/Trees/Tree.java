@@ -30,6 +30,21 @@ public class Tree {
         }
     }
 
+    public boolean find(int value) {
+        Node current = root;
+        while (current != null) {
+            if (value < current.value) {
+                current = current.leftNode;
+            }
+            else if (value > current.value) {
+                current = current.rightNode;
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private class Node {
         int value;
         Node leftNode;

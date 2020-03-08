@@ -9,5 +9,7 @@ public class Main {
        tree.insert(1);
        tree.insert(4);
        System.out.print("a");
+        boolean result = tree.find(6);
+        System.out.print(result);
     }
 }
