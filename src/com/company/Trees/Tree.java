@@ -5,11 +5,12 @@ public class Tree {
     private Node root;
 
     public void insert(int value) {
+        Node node = new Node(value);
         if (root == null) {
-            root = new Node(value);
+            root = node;
             return;
         }
-        Node node = new Node(value);
+
         Node current = root;
         while (true) {
             if (value < current.value) {
