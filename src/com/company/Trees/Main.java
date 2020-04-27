@@ -8,11 +8,11 @@ public class Main {
        tree.insert(9);
        tree.insert(1);
        tree.insert(4);
-       //System.out.print("a");
-       boolean result = tree.find(6);
+       //boolean result = tree.find(6);
        //System.out.print(result);
-       tree.traversePreOrder();
-       tree.traversePostOrder();
-       tree.traversePreOrder();
+       //tree.traversePreOrder();
+       //tree.traversePostOrder();
+       //tree.traversePreOrder();
+       System.out.print(tree.height());
     }
 }

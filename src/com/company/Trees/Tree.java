@@ -91,4 +91,19 @@ public class Tree {
             this.value = value;
         }
     }
+
+    public int height() {
+       return height(root);
+    }
+
+    public int height(Node root) {
+        if (root == null) {
+            return -1;
+        }
+        if (root.leftNode == null && root.rightNode == null) {
+            return 0;
+        }
+        return 1 + Math.max(height(root.leftNode), height(root.leftNode));
+
+    }
 }
