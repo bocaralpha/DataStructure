@@ -104,6 +104,38 @@ public class Tree {
             return 0;
         }
         return 1 + Math.max(height(root.leftNode), height(root.leftNode));
+    }
 
+    public boolean isLeaf(Node node) {
+        return node.leftNode == null && node.rightNode == null;
+    }
+
+    public int min() {
+        return min(root);
+    }
+
+    public int min(Node root) {
+        if (isLeaf(root)) {
+            return root.value;
+        }
+        var left =  min(root.leftNode);
+        var right = min(root.rightNode);
+        return Math.min(Math.min(left, right), root.value);
+    }
+
+    public boolean equals(Tree other) {
+        if (other == null) return false;
+        return equals(root, other.root);
+    }
+    public boolean equals(Node first, Node second) {
+        if (first == null && second == null) {
+            return true;
+        }
+        if (first != null && second != null) {
+            return first.value == second.value
+                    && equals(first.leftNode, second.leftNode)
+                    && equals(first.rightNode, second.rightNode);
+        }
+        return false;
     }
 }
