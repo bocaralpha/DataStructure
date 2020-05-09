@@ -138,4 +138,17 @@ public class Tree {
         }
         return false;
     }
+    public void printNodeAtDistance(int distance) {
+        printNodeAtDistance(root, distance);
+    }
+
+    private void printNodeAtDistance(Node root, int distance) {
+        if (root == null) return;
+        if (distance == 0) {
+            System.out.println(root.value);
+            return;
+        }
+        printNodeAtDistance(root.leftNode, distance -1);
+        printNodeAtDistance(root.rightNode, distance -1);
+    }
 }
