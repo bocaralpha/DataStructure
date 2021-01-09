@@ -10,7 +10,6 @@ public class Array {
         this.numbers = new int[length];
     }
 
-
     public String createList() {
         numbers[0] = 0;
         numbers[1] = 1;
