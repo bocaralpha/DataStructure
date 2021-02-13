@@ -1,4 +1,4 @@
-package com.company.HashMap;
+package com.datastructure.HashMap;
 
 import java.util.HashSet;
 import java.util.Map;

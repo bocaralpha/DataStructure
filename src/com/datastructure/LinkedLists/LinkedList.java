@@ -1,4 +1,4 @@
-package com.company.LinkedLists;
+package com.datastructure.LinkedLists;
 
 import java.util.NoSuchElementException;
 

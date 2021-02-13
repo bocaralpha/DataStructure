@@ -1,4 +1,4 @@
-package com.company.LinkedLists;
+package com.datastructure.LinkedLists;
 
 public class Main {
 

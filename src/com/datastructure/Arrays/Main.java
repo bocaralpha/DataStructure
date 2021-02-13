@@ -1,4 +1,4 @@
-package com.company.Arrays;
+package com.datastructure.Arrays;
 
 public class Main {
 

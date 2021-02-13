@@ -1,6 +1,4 @@
-package com.company.Stacks;
-
-import com.company.Arrays.Array;
+package com.datastructure.Stacks;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

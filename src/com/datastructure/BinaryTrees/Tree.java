@@ -1,4 +1,4 @@
-package com.company.BinaryTrees;
+package com.datastructure.BinaryTrees;
 
 public class Tree {
 

@@ -1,4 +1,4 @@
-package com.company.Sorting;
+package com.datastructure.Sorting;
 
 public class SelectionSort {
 

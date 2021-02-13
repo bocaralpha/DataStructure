@@ -1,8 +1,4 @@
-package com.company.Stacks;
-
-import com.company.Arrays.Array;
-
-import java.util.Arrays;
+package com.datastructure.Stacks;
 
 public class Main {
     public static void main(String[] args) {
