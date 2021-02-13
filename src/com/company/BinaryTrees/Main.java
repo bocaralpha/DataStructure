@@ -1,4 +1,4 @@
-package com.company.Trees;
+package com.company.BinaryTrees;
 
 public class Main {
     public static void main( String[] arg) {
